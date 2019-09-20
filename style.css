@@ -1,0 +1,35 @@
+body {
+	margin: 0;
+	padding: 0;
+}
+.hero {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.hero::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: url(ocean.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+	filter: brightness(100%);
+}
+.hero-content {
+	position: absolute;
+	font-family: "Courier New", sans-serif;
+	color: black;
+	text-align: center;
+	margin: 0.625rem;
+}
+.hero-tile {
+	font-size: 3rem
+}
